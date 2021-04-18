@@ -1,17 +1,15 @@
+//
+//Bu StateController da çeşitli parametrelerle
+//statelerdeki actionların vs kontrollu yapılır.
+//
+
+
 using UnityEngine;
 
 public class StateController : MonoBehaviour
 {
     public State currentState;
-    public float speed;
-    public float range;
-    public Renderer rend;
     public State remainState;
-
-    void Awake()
-    {
-        rend = GetComponent<MeshRenderer>();
-    }
 
     void Update()
     {
