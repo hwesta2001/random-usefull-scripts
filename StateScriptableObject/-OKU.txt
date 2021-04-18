@@ -1,0 +1,3 @@
+State leri yarat
+Statelerde çalışacak Actionları yarat
+Decision ile stateler arası geçişleri ayarla...

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 623cc40c4c6ddc54a969f9d8d7353e1b, type: 3}
+  m_Name: Forward
+  m_EditorClassIdentifier: 
+  actions:
+  - {fileID: 11400000, guid: 82b0a0b10dfed2948bb318573e34db92, type: 2}
+  - {fileID: 11400000, guid: de526a2fe97f51645a38cfb6de95b4a3, type: 2}
+  transitions:
+  - decision: {fileID: 11400000, guid: 8628be8d1eecf79499c47f8b45c60e26, type: 2}
+    trueState: {fileID: 11400000, guid: d3b521e640fe8044cb002a6defcbae0e, type: 2}
+    falseState: {fileID: 11400000}
+  - decision: {fileID: 11400000, guid: 0b676bb2c19aab0438ac977af667a129, type: 2}
+    trueState: {fileID: 11400000, guid: d3b521e640fe8044cb002a6defcbae0e, type: 2}
+    falseState: {fileID: 11400000}
+  color: {r: 0.7735849, g: 0, b: 0.06981199, a: 1}
+  forward: 1
