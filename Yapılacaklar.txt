@@ -1,0 +1,69 @@
+Kaldýgým yer: 18NisanPazar
+
+stonequary çalýþmlarýna baþladýk** -5
+(yeni stateMachine dene)
+--stoneQuary ýnsaasý bitmek uzere.
+--stoneQuary nin colliderlarý ayarlacak.
+--stoneQuary state ve logic yapýlacak.
+
+old----->
+stokpileEklendi******
+
+inn(kervanSaray) ile isciSpawni üzerine çalýþýlacak-3
+	-isci/IdleWork ustünde calýþmaya devam..*****
+	-hovel kurulumu bitii gibi******
+
+dialog alert text sistemi yapýldý......
+
+
+*** YILDIZ SAYISI NE KADAR ÇOKSA O KADAR TATMÝN EDÝCÝDÝR.***
+
+----------------------------------------------------------
+1- Kontroller ******
+	touch kontrolleri bitirdim sayýlýr.****
+
+----------------------------------------------------------
+2- Bina kurma  ******
+insaatAlaný ile bina kurulum scriptleri bitti sayýlýr*****
+-Hall hazýr olacak-inn hazýr olacak,
+
+----------------------------------------------------------
+3- inn(kervanSaray) ile isci spawný.****
+	inn colliderlarý mesh collider!!! deðiþecek ayarlanacak!!!
+
+----------------------------------------------------------
+4- oduncu kurma *********
+	odun toplama stateMachine
+	
+----------------------------------------------------------
+5- stone quary kurma
+	okuzCeker logic!!
+
+	stateMachine
+
+----------------------------------------------------------
+6- ...	Çeþitli binlarlarý kurma
+.	Hovel *******
+.	stokpile logic******
+.	
+.	
+.	
+----------------------------------------------------------
+7- !!!DuvarKurma!!!
+
+----------------------------------------------------------
+8- !!!Askeri Sistem Dizayný!!!
+
+----------------------------------------------------------
+
+9- WIN LOSE STATE AYARI VE
+LEVEL DÝZAYNI (MÝN 3 ALFA TESTÝ ÖNCESÝ)
+
+----------------------------------------------------------
+
+10- UI POLISH!!*
+Grafik POLISH!!!
+
+----------------------------------------------------------
+
+ALPHA TESTLER!!!
