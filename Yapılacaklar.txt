@@ -1,35 +1,35 @@
-Kaldýgým yer: 18NisanPazar
+Kaldigim yer: 18NisanPazar
 
-stonequary çalýþmlarýna baþladýk** -5
+stonequary calisamalarina basladik** -5
 (yeni stateMachine dene)
---stoneQuary ýnsaasý bitmek uzere.
---stoneQuary nin colliderlarý ayarlacak.
---stoneQuary state ve logic yapýlacak.
+--stone Quarry insaasi bitmek uzere
+--stoneQuary nin colliderlari ayarlacak.
+--stoneQuary state ve logic yapilacak.
 
 old----->
 stokpileEklendi******
 
-inn(kervanSaray) ile isciSpawni üzerine çalýþýlacak-3
-	-isci/IdleWork ustünde calýþmaya devam..*****
+inn(kervanSaray) ile isciSpawni uzerine calisilacak-3
+	-isci/IdleWork ustunde calismaya devam..*****
 	-hovel kurulumu bitii gibi******
 
-dialog alert text sistemi yapýldý......
+dialog alert text sistemi yapildi......
 
 
-*** YILDIZ SAYISI NE KADAR ÇOKSA O KADAR TATMÝN EDÝCÝDÝR.***
+*** YILDIZ SAYISI NE KADAR ï¿½OKSA O KADAR TATMiN EDiCiDiR.***
 
 ----------------------------------------------------------
 1- Kontroller ******
-	touch kontrolleri bitirdim sayýlýr.****
+	touch kontrolleri bitirdim sayilir.****
 
 ----------------------------------------------------------
 2- Bina kurma  ******
-insaatAlaný ile bina kurulum scriptleri bitti sayýlýr*****
--Hall hazýr olacak-inn hazýr olacak,
+insaatAlani ile bina kurulum scriptleri bitti sayilir*****
+-Hall hazir olacak-inn hazir olacak,
 
 ----------------------------------------------------------
-3- inn(kervanSaray) ile isci spawný.****
-	inn colliderlarý mesh collider!!! deðiþecek ayarlanacak!!!
+3- inn(kervanSaray) ile isci spawnï¿½.****
+	inn colliderlari mesh collider!!! deï¿½iï¿½ecek ayarlanacak!!!
 
 ----------------------------------------------------------
 4- oduncu kurma *********
@@ -42,7 +42,7 @@ insaatAlaný ile bina kurulum scriptleri bitti sayýlýr*****
 	stateMachine
 
 ----------------------------------------------------------
-6- ...	Çeþitli binlarlarý kurma
+6- ...	ï¿½eï¿½itli binlarlarï¿½ kurma
 .	Hovel *******
 .	stokpile logic******
 .	
@@ -52,12 +52,12 @@ insaatAlaný ile bina kurulum scriptleri bitti sayýlýr*****
 7- !!!DuvarKurma!!!
 
 ----------------------------------------------------------
-8- !!!Askeri Sistem Dizayný!!!
+8- !!!Askeri Sistem Dizaynï¿½!!!
 
 ----------------------------------------------------------
 
 9- WIN LOSE STATE AYARI VE
-LEVEL DÝZAYNI (MÝN 3 ALFA TESTÝ ÖNCESÝ)
+LEVEL Dï¿½ZAYNI (Mï¿½N 3 ALFA TESTï¿½ ï¿½NCESï¿½)
 
 ----------------------------------------------------------
 
