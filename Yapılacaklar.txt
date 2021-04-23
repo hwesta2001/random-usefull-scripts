@@ -1,5 +1,5 @@
 Kaldigim yer: 23e Nisan cep
-
+push deneme
 stonequary calisamalarina basladik** -5
 (yeni stateMachine dene)
 --stone Quarry insaasi bitmek uzere
