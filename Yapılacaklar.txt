@@ -1,4 +1,4 @@
-Kaldigim yer: 20 Nisan cep
+Kaldigim yer: 23 Nisan cep
 
 stonequary calisamalarina basladik** -5
 (yeni stateMachine dene)
