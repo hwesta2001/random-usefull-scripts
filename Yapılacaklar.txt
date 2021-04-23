@@ -1,5 +1,5 @@
-Kaldigim yer: 23e Nisan cep
-push deneme
+Kaldigim yer: 23 Nisan cep
+
 stonequary calisamalarina basladik** -5
 (yeni stateMachine dene)
 --stone Quarry insaasi bitmek uzere
@@ -16,7 +16,7 @@ inn(kervanSaray) ile isciSpawni uzerine calisilacak-3
 dialog alert text sistemi yapildi......
 
 
-*** YILDIZ SAYISI NE KADAR �OKSA O KADAR TATMiN EDiCiDiR.***
+*** YILDIZ SAYISI NE KADAR COKSA O KADAR TATMiN EDiCiDiR.***
 
 ----------------------------------------------------------
 1- Kontroller ******
@@ -28,8 +28,8 @@ insaatAlani ile bina kurulum scriptleri bitti sayilir*****
 -Hall hazir olacak-inn hazir olacak,
 
 ----------------------------------------------------------
-3- inn(kervanSaray) ile isci spawn�.****
-	inn colliderlari mesh collider!!! de�i�ecek ayarlanacak!!!
+3- inn(kervanSaray) ile isci spawni.****
+	inn colliderlari mesh collider!!! degisecek ayarlanacak!!!
 
 ----------------------------------------------------------
 4- oduncu kurma *********
@@ -42,7 +42,7 @@ insaatAlani ile bina kurulum scriptleri bitti sayilir*****
 	stateMachine
 
 ----------------------------------------------------------
-6- ...	�e�itli binlarlar� kurma
+6- ...	Cesitli binlarlari kurma
 .	Hovel *******
 .	stokpile logic******
 .	
@@ -52,12 +52,12 @@ insaatAlani ile bina kurulum scriptleri bitti sayilir*****
 7- !!!DuvarKurma!!!
 
 ----------------------------------------------------------
-8- !!!Askeri Sistem Dizayn�!!!
+8- !!!Askeri Sistem Dizayni!!!
 
 ----------------------------------------------------------
 
 9- WIN LOSE STATE AYARI VE
-LEVEL D�ZAYNI (M�N 3 ALFA TEST� �NCES�)
+LEVEL DiZAYNI (alpha Test onceis en az 3 level++)
 
 ----------------------------------------------------------
 
@@ -67,3 +67,7 @@ Grafik POLISH!!!
 ----------------------------------------------------------
 
 ALPHA TESTLER!!!
+
+
+..
+ReadyToGo!!!
