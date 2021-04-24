@@ -1,19 +1,13 @@
-Kaldigim yer: 23 Nisan cep
+Kaldigim yer: 24 Nisan gece
 
+insaaAlani yenilendi. daha global hale geldi
+
+old----->
 stonequary calisamalarina basladik** -5
 (yeni stateMachine dene)
 --stone Quarry insaasi bitmek uzere
 --stoneQuary nin colliderlari ayarlacak.
 --stoneQuary state ve logic yapilacak.
-
-old----->
-stokpileEklendi******
-
-inn(kervanSaray) ile isciSpawni uzerine calisilacak-3
-	-isci/IdleWork ustunde calismaya devam..*****
-	-hovel kurulumu bitii gibi******
-
-dialog alert text sistemi yapildi......
 
 
 *** YILDIZ SAYISI NE KADAR COKSA O KADAR TATMiN EDiCiDiR.***
@@ -21,15 +15,18 @@ dialog alert text sistemi yapildi......
 ----------------------------------------------------------
 1- Kontroller ******
 	touch kontrolleri bitirdim sayilir.****
-
+	dialog alert text sistemi yapildi......
 ----------------------------------------------------------
 2- Bina kurma  ******
 insaatAlani ile bina kurulum scriptleri bitti sayilir*****
 -Hall hazir olacak-inn hazir olacak,
-
+-stokpileEklendi******
 ----------------------------------------------------------
 3- inn(kervanSaray) ile isci spawni.****
 	inn colliderlari mesh collider!!! degisecek ayarlanacak!!!
+	inn(kervanSaray) ile isciSpawni uzerine calisilacak-3
+	-isci/IdleWork ustunde calismaya devam..*****
+	-hovel kurulumu bitii gibi******
 
 ----------------------------------------------------------
 4- oduncu kurma *********
