@@ -1,37 +1,29 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
 public class BasicFpsMovement : MonoBehaviour
 {
-    [SerializeField] bool turnWithRightClick = true;
+    [SerializeField] bool turnWithRightClick;
     [SerializeField] Transform cam;
     [SerializeField] float speed = 8;
     [SerializeField] float camVerticalSpeed = 300;
     [SerializeField] float camHorizontalSpeed = 300;
 
     CharacterController controller;
-    bool tik = false;
     bool canTurn = false;
+
     void Awake()
     {
         controller = GetComponent<CharacterController>();
 
         if (cam == null) cam = Camera.main.transform;
-
     }
 
     Vector3 MoveThis()
     {
-
         float horizontal = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
         float vertical = Input.GetAxis("Vertical") * speed * Time.deltaTime;
-
-
         return transform.forward * vertical + transform.right * horizontal;
-
-
     }
 
 
@@ -72,6 +64,7 @@ public class BasicFpsMovement : MonoBehaviour
             }
             else
             {
+
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
                 canTurn = false;
@@ -79,16 +72,21 @@ public class BasicFpsMovement : MonoBehaviour
         }
         else
         {
-            if (tik) return;
-            tik = true;
-            Cursor.lockState = CursorLockMode.Confined;
-            Cursor.visible = false;
-            canTurn = true;
+            if (Input.GetMouseButton(1))
+            {
+
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+                canTurn = false;
+            }
+            else
+            {
+
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+                canTurn = true;
+            }
         }
     }
-
-
-
-
 
 }
