@@ -67,11 +67,13 @@ public class BasicFpsMovement : MonoBehaviour
             if (Input.GetMouseButton(1))
             {
                 Cursor.lockState = CursorLockMode.Confined;
+                Cursor.visible = false;
                 canTurn = true;
             }
             else
             {
                 Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
                 canTurn = false;
             }
         }
@@ -80,6 +82,7 @@ public class BasicFpsMovement : MonoBehaviour
             if (tik) return;
             tik = true;
             Cursor.lockState = CursorLockMode.Confined;
+            Cursor.visible = false;
             canTurn = true;
         }
     }
