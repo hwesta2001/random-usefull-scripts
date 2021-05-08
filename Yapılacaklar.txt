@@ -1,6 +1,7 @@
 Kaldigim yer: 24 Nisan gece
 
-insaaAlani yenilendi. daha global hale geldi
+wall sistem üstünde ayrı dosya ile çalışmalar devam ediyor
+insaaAlani yenilendi. daha global hale geldi.
 
 old----->
 stonequary calisamalarina basladik** -5
