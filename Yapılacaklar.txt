@@ -1,8 +1,7 @@
-Kaldigim yer: 24 Nisan gece
+Kaldigim yer: 14 Mayıs gece
 
-wall sistem üstünde ayrı dosya ile çalışmalar devam ediyor
-
-insaaAlani yenilendi. daha global hale geldi.
+basic wallSystem entegre edildi. bitti gibi... 7
+buton actif pasif olayı ayarlandı.
 
 old----->
 stonequary calisamalarina basladik** -5
@@ -26,16 +25,18 @@ insaatAlani ile bina kurulum scriptleri bitti sayilir*****
 ----------------------------------------------------------
 3- inn(kervanSaray) ile isci spawni.****
 	inn colliderlari mesh collider!!! degisecek ayarlanacak!!!
-	inn(kervanSaray) ile isciSpawni uzerine calisilacak-3
+	inn(kervanSaray) ile isciSpawni bitti***
 	-isci/IdleWork ustunde calismaya devam..*****
 	-hovel kurulumu bitii gibi******
 
 ----------------------------------------------------------
 4- oduncu kurma *********
 	odun toplama stateMachine
+	oduncu tüm mekanikler hazır!****
 	
 ----------------------------------------------------------
-5- stone quary kurma
+5- stone quary kurma**
+	colliderları yok daha!
 	okuzCeker logic!!
 
 	stateMachine
@@ -48,19 +49,30 @@ insaatAlani ile bina kurulum scriptleri bitti sayilir*****
 .	
 .	
 ----------------------------------------------------------
-7- !!!DuvarKurma!!!
+7- !!!DuvarKurma!!! *****
+basit duvar kurulumu bitti gibi ***
+merdiven ve kapı sistemleri yapılacak!
 
 ----------------------------------------------------------
 8- !!!Askeri Sistem Dizayni!!!
 
+
+----------------------------------------------------------
+9 - !! ITEM SISTEMi!!!
+
+
+----------------------------------------------------------
+10 !! Quest System !!
+
+
 ----------------------------------------------------------
 
-9- WIN LOSE STATE AYARI VE
+11- WIN LOSE STATE AYARI VE
 LEVEL DiZAYNI (alpha Test onceis en az 3 level++)
 
 ----------------------------------------------------------
 
-10- UI POLISH!!*
+12- UI POLISH!!*
 Grafik POLISH!!!
 
 ----------------------------------------------------------
