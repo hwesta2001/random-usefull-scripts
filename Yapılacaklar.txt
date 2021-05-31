@@ -1,9 +1,9 @@
 
 31 Mayıs Gece:
-otelde (collabrate acık) kasa ve depo stone, iron vb. doldurma sistemi
-çalışmlarına devam ediliyor...
+otelde (collabrate acik) kasa ve depo stone, iron vb. doldurma sistemi
+calısmalarına devam ediliyor...
 
-Kaldigim yer: 14 Mayıs gece
+ANA PROJE: 14 Mayıs gece
 
 basic wallSystem entegre edildi. bitti gibi... 7
 buton actif pasif olayı ayarlandı.
