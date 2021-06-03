@@ -2,17 +2,12 @@ using UnityEngine;
 
 public class Deneme : Monobehavior
 {
-  float someFloat;
+
+  float someFloat;  
   
-  
-  void Start(){
-    
+  void Start()
+  {
     someFloat =4f;
-    Debug.Log(" someFloat= "+someFloat);
-    
-    
+    Debug.Log(" someFloat= "+someFloat);    
   }
-  
-  
-  
 }
