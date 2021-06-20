@@ -1,19 +1,12 @@
 
-31 Mayıs Gece:
-otelde (collabrate acik) kasa ve depo stone, iron vb. doldurma sistemi
-calısmalarına devam ediliyor...
+20 Haziran
+stoneQuary ve wagon işi bitti. ***
 
 ANA PROJE: 14 Mayıs gece
 
 basic wallSystem entegre edildi. bitti gibi... 7
 buton actif pasif olayı ayarlandı.
 
-old----->
-stonequary calisamalarina basladik** -5
-(yeni stateMachine dene)
---stone Quarry insaasi bitmek uzere
---stoneQuary nin colliderlari ayarlacak.
---stoneQuary state ve logic yapilacak.
 
 
 *** YILDIZ SAYISI NE KADAR COKSA O KADAR TATMiN EDiCiDiR.***
@@ -40,11 +33,8 @@ insaatAlani ile bina kurulum scriptleri bitti sayilir*****
 	oduncu tüm mekanikler hazır!****
 	
 ----------------------------------------------------------
-5- stone quary kurma**
-	colliderları yok daha!
-	okuzCeker logic!!
-
-	stateMachine
+5- stone quary kurma*******
+	logic bitti!
 
 ----------------------------------------------------------
 6- ...	Cesitli binlarlari kurma
@@ -55,7 +45,7 @@ insaatAlani ile bina kurulum scriptleri bitti sayilir*****
 .	
 ----------------------------------------------------------
 7- !!!DuvarKurma!!! *****
-basit duvar kurulumu bitti gibi ***
+basit duvar kurulumu bitti gibi ****
 merdiven ve kapı sistemleri yapılacak!
 
 ----------------------------------------------------------
