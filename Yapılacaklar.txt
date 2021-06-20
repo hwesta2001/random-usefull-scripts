@@ -2,9 +2,9 @@
 20 Haziran
 stoneQuary ve wagon işi bitti. ***
 
-ANA PROJE: 14 Mayıs gece
+14 Mayıs gece
 
-basic wallSystem entegre edildi. bitti gibi... 7
+basic wallSystem entegre edildi. bitti gibi... 
 buton actif pasif olayı ayarlandı.
 
 
