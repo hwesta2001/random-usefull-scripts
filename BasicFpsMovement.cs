@@ -19,6 +19,15 @@ public class BasicFpsMovement : MonoBehaviour
         if (cam == null) cam = Camera.main.transform;
     }
 
+    void Start()
+    {
+        if (cam == null) return;
+        cam.parent = transform;
+        cam.localPosition = new Vector3(0, 1, 0);
+        cam.localEulerAngles = Vector3.zero;
+    }
+
+
     Vector3 MoveThis()
     {
         float horizontal = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
@@ -34,6 +43,7 @@ public class BasicFpsMovement : MonoBehaviour
         float invertY = -1;
         return new Vector3(verDelta * invertY, 0, 0);
     }
+
     Vector3 HorizontalTurn()
     {
         float horDelta = Input.GetAxis("Mouse X");
