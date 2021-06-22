@@ -8,7 +8,7 @@ public class BasicFpsMovement : MonoBehaviour
     [SerializeField] float speed = 8;
     [SerializeField] float camVerticalSpeed = 300;
     [SerializeField] float camHorizontalSpeed = 300;
-
+    Vector3 vert;
     CharacterController controller;
     bool canTurn = false;
 
@@ -21,9 +21,10 @@ public class BasicFpsMovement : MonoBehaviour
 
     void Start()
     {
+        vert = Vector3.zero;
         if (cam == null) return;
         cam.parent = transform;
-        cam.localPosition = new Vector3(0, 1, 0);
+        cam.localPosition = new Vector3(0, 2, 0);
         cam.localEulerAngles = Vector3.zero;
     }
 
@@ -41,7 +42,8 @@ public class BasicFpsMovement : MonoBehaviour
         float verDelta = Input.GetAxis("Mouse Y");
         verDelta *= (camVerticalSpeed * Time.deltaTime);
         float invertY = -1;
-        return new Vector3(verDelta * invertY, 0, 0);
+        verDelta *= invertY;
+        return new Vector3(verDelta, 0, 0);
     }
 
     Vector3 HorizontalTurn()
@@ -57,7 +59,11 @@ public class BasicFpsMovement : MonoBehaviour
         TurnControl();
         if (!canTurn) return;
         transform.localEulerAngles += HorizontalTurn();
-        cam.localEulerAngles += VerticalTurn();
+        vert += VerticalTurn();
+        //float x = vert.x;
+        float x = Mathf.Clamp(vert.x, -80, 80);
+        vert.x = x;
+        cam.localEulerAngles = vert;
     }
 
 
