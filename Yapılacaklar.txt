@@ -1,3 +1,6 @@
+25 Haziran:
+PlayerSelectin sistemi çalışmalarına devam edildi.
+
 22 Haziran:
 Askeri sistem, CanSistemi otelde başlandı.
 Colobratte kayıtlı.
