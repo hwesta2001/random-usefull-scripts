@@ -1,5 +1,6 @@
-25 Haziran:
-PlayerSelectin sistemi çalışmalarına devam edildi.
+29 Haziran:
+Askeri sistem, CanSistemi, PlayerSelectin sistemi çalışmalarına devam edildi.
+NOT: PlayerSelection OnMouseDown ile dene!!!
 
 22 Haziran:
 Askeri sistem, CanSistemi otelde başlandı.
