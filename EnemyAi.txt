@@ -1,0 +1,19 @@
+-Update de belli sürelerde durum controlu yapılacak. 
+-eğer rangede bir target varsa attack 
+-rangede target yoksa belli logicle yol seçilecek. 
+    en yakındaki unite doğru gidilebilir. 
+    yolda giderken belli aralıklarla yine target kontrolü yapılır. 
+    yeni target varsa ona doğru yönelir.
+    target range girince attack başlar. 
+-move için hiç bir target yoksa ana binaya doğru gelir.
+   enemy ana binanın tepesinde belli sürede kalırsa oyun biter loseState. 
+-bazı saldırılarda belli rotalara AttackMove ile gider. 
+-AttackMove her kontrolde rangedeki targetlere saldırarak hedefe ilerler şeklinde olacak 
+
+-yine her bir tic zamanda Ai refresh kontrolü yapılır. 
+   takılmalari önlemek 
+   can durumuna göre geri kaçma
+   yakındaki duvarın üstüne çıkma 
+   kendisine saldırani tespit etme ondan avantajlı ise ona doğru hareket etme değilse kacma 
+   
+   
