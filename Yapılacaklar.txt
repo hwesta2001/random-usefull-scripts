@@ -1,3 +1,13 @@
+27 Temmuz Gece:
+Command sistemi çalışmaları başladı, 
+Genel command lar oluşturulacak. 
+Move, Attack, Defend, vs... 
+Global bir command sistemi yapılacak, 
+tüm unitler bu komutlara göre davranacak. 
+_Mesela bina sabit ve target arar şeklinde duracak. 
+target bulunca ateş edecek.
+_Mesela EnemyAi... (bunun için EnemyAiLogic dosyasını oluşturdum githubta) 
+
 29 Haziran:
 Askeri sistem, CanSistemi, PlayerSelectin sistemi çalışmalarına devam edildi.
 NOT: PlayerSelection OnMouseDown ile dene!!!
