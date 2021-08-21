@@ -1,3 +1,7 @@
+21 Agustos Commands Sistem devam
+-UnitInfoPaneli yapıldı.
+-Unit Command Paneli eklenecek!!!
+
 12 Agustos Gece: ASKERİ SİSTEM ANA OYUNA EKLENDİ!!!.
 COMMAND SİSTEM ÇALIŞMLARI DEVAM EDİYOR
 
