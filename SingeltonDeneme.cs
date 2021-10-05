@@ -6,7 +6,9 @@ using UnityEngine.AI;
 public class Unit
 {
     [HideInInspector]
-    public Transform trans, selectionArrowTransform; // unitmono da ayarlanıyor o yüzden HideInInspector!! // bu unit in Transform'u SÜPER KULLANIŞLI !!!
+    public Transform trans; // unitmono da ayarlanıyor o yüzden HideInInspector!! // bu unit in Transform'u SÜPER KULLANIŞLI !!! istediğin yerde bu unitin transformuna getcomponent vs gerekmeden ulaşıyoruz.
+    [HideInInspector]
+    public Transform selectionArrowTransform; 
     [HideInInspector]
     public NavMeshAgent agent; // unitmono da ayarlanıyor o yüzden HideInInspector!! 
 
