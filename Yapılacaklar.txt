@@ -92,7 +92,13 @@ LEVEL DiZAYNI (alpha Test onceis en az 3 level++)
 
 ----------------------------------------------------------
 
-12- UI POLISH!!*
+GLOBAL VERİLERİN DÜZENLENMESİ
+Save Load sistemi
+
+
+----------------------------------------------------------
+
+UI POLISH!!*
 Grafik POLISH!!!
 
 ----------------------------------------------------------
