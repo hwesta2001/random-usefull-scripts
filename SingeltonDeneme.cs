@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-[System.Serializable]
+[System.Serializable]  //bu satır ile unityde inspectorde yaratılan Unit ler görünür hale geliyor. bunu eklemezsek inspectörde Unit public olsa da görünmez.
 
 public class Unit
 {
