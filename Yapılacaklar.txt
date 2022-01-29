@@ -1,3 +1,14 @@
+30 Ocak 2022
+Food sistemine başlandı.
+Barn eklendi. Barna weath getirilecek, bu weath una dönüşecek. mill eklenecek.
+undan bakery ile ekmek yapılacak.
+meyve bahçeleri eklenecek. (sulama sistemi eklenebilir. ilk önce kuyu ile yavaş üretim yapılır. sonra su yolları ile hızlanır gibi)
+hunter sistemi eklenecek.
+inek ahırı peynir eklenecek.
+koyun ahrı peynir eklenecek.
+koyun, inek yayılma sistemi eklenecek.
+
+
 21 Agustos Commands Sistem devam
 -UnitInfoPaneli yapıldı.
 -Unit Command Paneli eklenecek!!!
