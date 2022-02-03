@@ -1,3 +1,14 @@
+							Projenin Unity versiyonu : 2020.3.27f1
+							Projenin Adı 		 : HwStrongRpg
+							Projenin Türü 		 : Stronghold Kopyası. 3dFps Kontroller. Rpg öğerleri warcraft3 benzeri.
+							
+							
+3 Şubat 2022 Gece
+Unit versiyonu değişti 2020.3.27f1 oldu.
+Plastic Scm ye geçiş yapıldı.
+Command Sistemi Geliştirildi.
+	AttackMove ve StandAndAttack editlendi. Bitti sayılır.
+
 30 Ocak 2022
 Food sistemine başlandı.
 Barn eklendi. Barna weath getirilecek, bu weath una dönüşecek. mill eklenecek.
