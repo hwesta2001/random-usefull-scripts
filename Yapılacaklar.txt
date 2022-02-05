@@ -1,6 +1,6 @@
-							Projenin Unity versiyonu : 2020.3.27f1
-							Projenin Adı 		 : HwStrongRpg
-							Projenin Türü 		 : Stronghold Kopyası. 3dFps Kontroller. Rpg öğerleri warcraft3 benzeri.
+Projenin Unity versiyonu : 2020.3.27f1
+Projenin Adı 		 : HwStrongRpg
+Projenin Türü 		 : Stronghold Kopyası. 3dFps Kontroller. Rpg öğerleri warcraft3 benzeri.
 							
 							
 3 Şubat 2022 Gece
