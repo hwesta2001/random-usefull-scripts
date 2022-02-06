@@ -11,3 +11,4 @@ public class Deneme : Monobehavior
     Debug.Log(" someFloat= "+someFloat);    
   }
 }
+//deneme
