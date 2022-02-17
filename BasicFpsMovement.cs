@@ -5,9 +5,9 @@ public class BasicFpsMovement : MonoBehaviour
 {
     [SerializeField] bool turnWithRightClick;
     [SerializeField] Transform cam;
-    [SerializeField] float speed = 8;
-    [SerializeField] float camVerticalSpeed = 300;
-    [SerializeField] float camHorizontalSpeed = 300;
+    [SerializeField] float speed = 7;
+    [SerializeField] float camVerticalSpeed = 150;
+    [SerializeField] float camHorizontalSpeed = 200;
    
     Vector3 vert;
     CharacterController controller;
