@@ -26,7 +26,7 @@ public class BasicFpsMovement : MonoBehaviour
         if (cam == null) return;
         cam.parent = transform;
         //cam.localPosition = new Vector3(0, 2, 0);
-        cam.localEulerAngles = new Vector3(90,0,0);
+        cam.localEulerAngles = new Vector3(0,0,0);
     }
 
 
