@@ -5,6 +5,7 @@ Projenin Türü 		 : Stronghold Kopyası. 3dFps Kontroller. Rpg öğerleri, comb
 9 Haziran 2022 Gece:
 wall sisteminde düzeltmeler yapıldı wall sistemi bitti sayılır.
 DELETE WALL-buildind sistemi yapılmazı lazım!!!!!! 2inci başlık kontorol
+yapılacakları EXELL (google sheets) haline cevir!!!
 
 3 Şubat 2022 Gece
 Unit versiyonu değişti 2020.3.27f1 oldu.
