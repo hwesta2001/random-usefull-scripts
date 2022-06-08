@@ -1,8 +1,11 @@
 Projenin Unity versiyonu : 2020.3.27f1
 Projenin Adı 		 : HwStrongRpg
-Projenin Türü 		 : Stronghold Kopyası. 3dFps Kontroller. Rpg öğerleri warcraft3 benzeri.
+Projenin Türü 		 : Stronghold Kopyası. 3dFps Kontroller. Rpg öğerleri, combat sistemi warcraft3 benzeri.
 							
-							
+9 Haziran 2022 Gece:
+wall sisteminde düzeltmeler yapıldı wall sistemi bitti sayılır.
+DELETE WALL-buildind sistemi yapılmazı lazım!!!!!! 2inci başlık kontorol
+
 3 Şubat 2022 Gece
 Unit versiyonu değişti 2020.3.27f1 oldu.
 Plastic Scm ye geçiş yapıldı.
@@ -67,6 +70,7 @@ buton actif pasif olayı ayarlandı.
 insaatAlani ile bina kurulum scriptleri bitti sayilir*****
 -Hall hazir olacak-inn hazir olacak,
 -stokpileEklendi******
+-DELETE SİSTEMİ EKLENECEKç
 ----------------------------------------------------------
 3- inn(kervanSaray) ile isci spawni.****
 	inn colliderlari mesh collider!!! degisecek ayarlanacak!!!
@@ -84,15 +88,15 @@ insaatAlani ile bina kurulum scriptleri bitti sayilir*****
 	logic bitti!
 
 ----------------------------------------------------------
-6- ...	Cesitli binlarlari kurma
+6- ...	Cesitli binalarlari kurma
 .	Hovel *******
 .	stokpile logic******
-.	
+.	dokoratifler vb..
 .	
 .	
 ----------------------------------------------------------
-7- !!!DuvarKurma!!! *****
-basit duvar kurulumu bitti gibi ****
+7- !!!DuvarKurma!!! ****
+basit duvar kurulumu bitti gibi ******
 merdiven ve kapı sistemleri yapılacak!
 
 ----------------------------------------------------------
