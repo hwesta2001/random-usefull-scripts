@@ -3,42 +3,86 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class BasicFpsMovement : MonoBehaviour
 {
-    [SerializeField] bool turnWithRightClick;
-    [SerializeField] Transform cam;
-    [SerializeField] float speed = 7;
-    [SerializeField] float camVerticalSpeed = 150;
-    [SerializeField] float camHorizontalSpeed = 200;
-   
-    Vector3 vert;
-    CharacterController controller;
-    bool canTurn = false;
+    [SerializeField] private bool turnWithRightClick;
+    [SerializeField] private float moveSpeed = 12;
+    [SerializeField] private float camVerticalSpeed = 300;
+    [SerializeField] private float camHorizontalSpeed = 300;
+    [SerializeField] private float camHightSpeed = 30f;
+    [SerializeField] private int camHightClampMin = 1;
+    [SerializeField] private int camHightClapmMax = 20;
+    [SerializeField] private Transform cam;
 
-    void Awake()
+    private Vector3 vert;
+    private bool canTurn = false;
+    private CharacterController controller;
+    private int cameraHcarpan = 1;
+    private bool up;
+
+    private void Awake()
     {
-        controller = GetComponent<CharacterController>();
-
         if (cam == null) cam = Camera.main.transform;
-    }
-
-    void Start()
-    {
-        vert = Vector3.zero;
-        if (cam == null) return;
+        controller = GetComponent<CharacterController>();
+        vert = new(cam.localEulerAngles.x, transform.localEulerAngles.y, 0);
+        if (cam.parent == transform) return;
         cam.parent = transform;
-        //cam.localPosition = new Vector3(0, 2, 0);
-        cam.localEulerAngles = new Vector3(0,0,0);
+        cam.localEulerAngles = Vector3.zero;
+        cam.localPosition = new(0, 8, 0);
     }
 
-
-    Vector3 MoveThis()
+    private void Update()
     {
-        float horizontal = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
-        float vertical = Input.GetAxis("Vertical") * speed * Time.deltaTime;
+        controller.Move(MoveThis());
+        TurnControl();
+        CamHight();
+        CameraRotate();
+    }
+
+    private void LateUpdate()
+    {
+        if (up)
+        {
+            float camY = cam.localPosition.y + cameraHcarpan * camHightSpeed * Time.deltaTime;
+            camY = Mathf.Clamp(camY, camHightClampMin, camHightClapmMax);
+            cam.localPosition = new(cam.localPosition.x, camY, cam.localPosition.z);
+        }
+    }
+
+    private void CamHight()
+    {
+        if (Input.GetKey(KeyCode.E))
+        {
+            cameraHcarpan = 1;
+            up = true;
+        }
+        else if (Input.GetKey(KeyCode.Q))
+        {
+            cameraHcarpan = -1;
+            up = true;
+        }
+        else
+        {
+            up = false;
+        }
+    }
+
+    private Vector3 MoveThis()
+    {
+        float horizontal = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
+        float vertical = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
         return transform.forward * vertical + transform.right * horizontal;
     }
 
+    private void CameraRotate()
+    {
+        if (!canTurn) return;
+        transform.localEulerAngles += HorizontalTurn();
+        vert += VerticalTurn();
+        float x = Mathf.Clamp(vert.x, -80, 80);
+        vert.x = x;
+        cam.localEulerAngles = vert;
+    }
 
-    Vector3 VerticalTurn()
+    private Vector3 VerticalTurn()
     {
         float verDelta = Input.GetAxis("Mouse Y");
         verDelta *= (camVerticalSpeed * Time.deltaTime);
@@ -47,29 +91,14 @@ public class BasicFpsMovement : MonoBehaviour
         return new Vector3(verDelta, 0, 0);
     }
 
-    Vector3 HorizontalTurn()
+    private Vector3 HorizontalTurn()
     {
         float horDelta = Input.GetAxis("Mouse X");
         horDelta *= (camHorizontalSpeed * Time.deltaTime);
         return new Vector3(0, horDelta, 0);
     }
 
-    void Update()
-    {
-        controller.Move(MoveThis());
-        TurnControl();
-        if (!canTurn) return;
-        transform.localEulerAngles += HorizontalTurn();
-        vert += VerticalTurn();
-        //float x = vert.x;
-        float x = Mathf.Clamp(vert.x, -80, 80);
-        vert.x = x;
-        cam.localEulerAngles = vert;
-    }
-
-
-
-    void TurnControl()
+    private void TurnControl()
     {
         if (turnWithRightClick)
         {
@@ -81,7 +110,6 @@ public class BasicFpsMovement : MonoBehaviour
             }
             else
             {
-
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
                 canTurn = false;
@@ -91,19 +119,16 @@ public class BasicFpsMovement : MonoBehaviour
         {
             if (Input.GetMouseButton(1))
             {
-
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
                 canTurn = false;
             }
             else
             {
-
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
                 canTurn = true;
             }
         }
     }
-
 }
