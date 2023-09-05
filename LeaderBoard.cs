@@ -4,7 +4,8 @@ using System;
 public class LeaderBoard : Monobehaivour
 {
  public int currentScore;
- public List<Score>  scores = new();
+ public List<Score>  scores = new(); // new değil playerprefaba yaz çek.
+                      															// ilk başta custom bir liste oluşturabiliriz 
  public List<TexMeshProOnGui> textMeshesNames = new();
  public List<TexMeshProOnGui> textMeshesScores = new();
 
