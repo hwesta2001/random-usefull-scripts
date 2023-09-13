@@ -4,10 +4,10 @@ using UnityEngine;
 public class BasicFpsMovement : MonoBehaviour
 {
     [SerializeField] private bool turnWithRightClick;
-    [SerializeField] private float moveSpeed = 12;
-    [SerializeField] private float camVerticalSpeed = 300;
-    [SerializeField] private float camHorizontalSpeed = 300;
-    [SerializeField] private float camHightSpeed = 30f;
+    [SerializeField] private float moveSpeed = 10;
+    [SerializeField] private float camVerticalSpeed = 250;
+    [SerializeField] private float camHorizontalSpeed = 250;
+    [SerializeField] private float camHightSpeed = 20f;
     [SerializeField] private int camHightClampMin = 1;
     [SerializeField] private int camHightClapmMax = 20;
     [SerializeField] private Transform cam;
