@@ -1,55 +1,54 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-
-public class Score
-{
-    public int score;
-    public string name;
-}
+using Dan.Main;
 
 public class LeaderBoardManager : MonoBehaviour
 {
 
-    public int currentScore;
-    public List<Score> scores = new(); // new değil playerprefaba yaz çek.
-                                       // ilk başta custom bir liste oluşturabiliriz 
-    public List<TextMeshProUGUI> textMeshesNames = new();
-    public List<TextMeshProUGUI> textMeshesScores = new();
+  
+    [SerializeField] TextMeshProUGUI learderBoardTMP;
+    [SerializeField] TMP_InputField userNameIF;
+    readonly string publicLeaderBoardKey = "0********************************************e";
+    int maxTopLenght = 20;
 
-    void SetScore(string _name)
+    void Start()
     {
-        currentScore = GlobalVeriler.ins.Score;
-        Score newScore = new()
+        GetLeaderboard();
+        if (PlayerPrefs.HasKey("username"))
         {
-            name = _name,
-            score = currentScore
-        };
-        CompareScores(newScore);
+            userNameIF.text = PlayerPrefs.GetString("username").ToString();
+        }
+
     }
 
-    void CompareScores(Score _score)
+    void GetLeaderboard()
     {
-        for (int i = 0; i < scores.Count; i++)
+        learderBoardTMP.text = "";
+        LeaderboardCreator.GetLeaderboard(publicLeaderBoardKey, (msg) =>
         {
-            if (_score.score >= scores[i].score)
+            int loopLenght = (msg.Length < maxTopLenght) ? msg.Length : maxTopLenght;
+            foreach (var item in msg)
             {
-                scores[i] = _score;
-                break;
+                learderBoardTMP.text += item.Username + " - " + item.Score.ToString() + "\n";
             }
-        }
-        RefresLeaderboardList();
+        });
     }
 
-    void RefresLeaderboardList()
+    void SetLeaderBoard(string username, int score)
     {
-        for (int i = 0; i < scores.Count; i++)
+        LeaderboardCreator.UploadNewEntry(publicLeaderBoardKey, username, score, (msg) =>
         {
-            textMeshesNames[i].text = scores[i].name;
-            textMeshesScores[i].text = scores[i].score.ToString();
-        }
+            GetLeaderboard();
+        });
+    }
 
+
+    public void SendToLeaderBoardButton()
+    {
+        int _socre= 110000; // get playe score from your game
+        SetLeaderBoard(userNameIF.text, _socre);
+        PlayerPrefs.SetString("username", userNameIF.text);
+        PlayerPrefs.Save();
     }
 
 }
